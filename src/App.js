@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from "axios";
 // import Card from "./Card"
-import CardContainer from "./CardContainer";
+import CardContainer from "./Component/CardContainer";
 
 
 function App() {
@@ -23,13 +23,12 @@ const [Apod, setApod] = useState([]);
     })
   }, []) 
   
-  
 
 
 
   return (
     <div className="App">
-       <CardContainer url={Apod.hdurl} title={Apod.title} date={Apod.date} explanation={Apod.explanation} mediaType={Apod.mediaType} />
+       <CardContainer url={Apod.url} title={Apod.title} date={Apod.date} explanation={Apod.explanation} mediaType={Apod.mediaType} serviceVersion={Apod.service_version} />
       
     </div>
   );

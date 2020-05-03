@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../App.css";
 
 export default function Card(props){
 
@@ -12,6 +12,7 @@ export default function Card(props){
             <h1 className="title">{props.title}</h1>
             <p className="explanation">Date: {props.date}</p>
             <p className="explanation">{props.explanation}</p>
+            <p className="SV">{props.serviceVersion}</p>
             </div>
         </div>
     )
