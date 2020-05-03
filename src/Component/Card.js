@@ -6,6 +6,7 @@ export default function Card(props){
     return(
         <div className="card_container">
             <div className="img_container">
+                <h1 className="mainTitle">Astronomy Picture of the Day</h1>
             <img className="cardImg" src={props.url} alt="APOD"></img>
             </div>
             <div className="text_container">
