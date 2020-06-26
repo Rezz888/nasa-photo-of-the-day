@@ -6,10 +6,12 @@ const CardContainer = props => {
 
     return(
         <div className="card_con">
-            <Card url={props.url} title={props.title} date={props.date} explanation={props.explanation} mediaType={props.mediaType} serviceVersion={props.serviceVersion}/>
+            <Card url={props.url} title={props.title} date={props.date} explanation={props.explanation} mediaType={props.mediaType} serviceVersion={props.serviceVersion} copyright={props.copyright} />
             
         </div>   
     );
 }
 
 export default CardContainer;
+
+// copyright={props.copyright}

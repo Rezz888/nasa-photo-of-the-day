@@ -13,7 +13,9 @@ export default function Card(props){
             <h1 className="title">{props.title}</h1>
             <p className="explanation">Date: {props.date}</p>
             <p className="explanation">{props.explanation}</p>
-            <p className="SV">{props.serviceVersion}</p>
+            <p className="SV">Service Version: {props.serviceVersion}</p>
+            <footer>&copy; Copyright 2020: {props.copyright}</footer>
+
             </div>
         </div>
     )
